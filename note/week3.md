@@ -156,70 +156,210 @@ token=}
 ```
 void IF(){
   int ifBegin = nextLabel();
+  int ifMid = nextLabel();
   int ifEnd = nextLabel();
   emit("(L%d)\n", ifBegin);
   skip("if");
   skip("(");
   int e = E();
-  emit("if not T%d goto L%d\n", e, ifEnd);
+  emit("if not T%d goto L%d\n", e, ifMid);
   skip(")");
   STMT();
-  emit("goto L%d\n", ifBegin);
-  emit("(L%d)\n", ifEnd);
+  emit("goto L%d\n", ifEnd);
+  emit("(L%d)\n", ifMid);
+  if(isNext("else")){
+    skip("else");
+    STMT();
+    emit("(L%d)\n",ifEnd);
+  }
 }
 ```
 * 執行結果
 ```
-relax@DESKTOP-MP5A0EO MINGW64 ~/OneDrive/文件/code/sp1/03-compiler/03b-compiler2 (master)
+relax@DESKTOP-MP5A0EO MINGW64 ~/OneDrive/文件/code/sp/03-compiler/03b-compiler2 (master)
 $ ./compiler test/if.c
-i = 1;
-if (i == 1) i = i + 1;
+if (a>3) {      
+  t=1;
+} else if(a<=0){
+  t=2;
+} else{
+  t=3;
+}
 ========== lex ==============
-token=i
+token=if
+token=(
+token=a
+token=>
+token=3
+token=)
+token={
+token=t
 token==
 token=1
 token=;
+token=}
+token=else
 token=if
 token=(
-token=i
-token===
-token=1
+token=a
+token=<=
+token=0
 token=)
+token={
+token=t
+token==
+token=2
+token=;
+token=}
+token=else
+token={
+token=t
+token==
+token=3
+token=;
+token=}
+========== dump ==============
+0:if
+1:(
+2:a
+3:>
+4:3
+5:)
+6:{
+7:t
+8:=
+9:1
+10:;
+11:}
+12:else
+13:if
+14:(
+15:a
+16:<=
+17:0
+18:)
+19:{
+20:t
+21:=
+22:2
+23:;
+24:}
+25:else
+26:{
+27:t
+28:=
+29:3
+30:;
+31:}
+============ parse =============
+(L0)
+t0 = a
+t1 = 3
+t2 = t0 > t1
+if not T2 goto L1
+t3 = 1
+t = t3
+goto L2
+(L1)
+(L3)
+t4 = a
+t5 = 0
+t6 = t4 <= t5
+if not T6 goto L4
+t7 = 2
+t = t7
+goto L5
+(L4)
+t8 = 3
+t = t8
+(L5)
+(L2)
+```
+
+* 習題FOR
+```
+void FOR(){
+  int forBegin = nextLabel();
+  int forEnd = nextLabel();
+  emit("(L%d)\n", forBegin);
+  skip("for");
+  skip("(");
+  ASSIGN();
+  int e = E();
+  emit("if not T%d goto L%d\n", e, forEnd);
+  skip(";");
+  int e1 = E();
+  skip(")");
+  STMT();
+  emit("goto L%d\n", forBegin);
+  emit("L%d", forEnd);
+}
+```
+* 執行結果
+```
+relax@DESKTOP-MP5A0EO MINGW64 ~/OneDrive/文件/code/sp/03-compiler/03b-compiler2 (master)
+$ ./compiler test/for.c
+for(i=0; i<10; i++){
+    a = a + 1;
+}
+========== lex ==============
+token=for
+token=(
 token=i
 token==
+token=0
+token=;
 token=i
+token=<
+token=10
+token=;
+token=i
+token=++
+token=)
+token={
+token=a
+token==
+token=a
 token=+
 token=1
 token=;
+token=}
 ========== dump ==============
-0:i
-1:=
-2:1
-3:;
-4:if
-5:(
+0:for
+1:(
+2:i
+3:=
+4:0
+5:;
 6:i
-7:==
-8:1
-9:)
+7:<
+8:10
+9:;
 10:i
-11:=
-12:i
-13:+
-14:1
-15:;
+11:++
+12:)
+13:{
+14:a
+15:=
+16:a
+17:+
+18:1
+19:;
+20:}
 ============ parse =============
-t0 = 1
-i = t0
 (L0)
+t0 = 0
+i = t0
 t1 = i
-t2 = 1
-t3 = t1 == t2
+t2 = 10
+t3 = t1 < t2
 if not T3 goto L1
+i = i + 1
 t4 = i
-t5 = 1
-t6 = t4 + t5
-i = t6
+t5 = a
+t6 = 1
+t7 = t5 + t6
+a = t7
 goto L0
 (L1)
 ```
