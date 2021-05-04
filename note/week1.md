@@ -88,8 +88,3 @@ gcc sum.o -o sum
     clean:
 	    rm -f *.o *.a *.exe $(TARGET)
 ```
-
-## 系統程式 & 系統軟體
-```
-
-```
