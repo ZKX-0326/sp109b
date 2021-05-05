@@ -130,12 +130,12 @@ goto L0
 int isTempIr = 0;
 char tempIr[100000], *tempIrp = tempIr;
 #define emit(...) ({ \
-  if (isTempIr){ \ //判斷isTempIr是否為1
-    sprintf(tempIrp, __VA_ARGS__); \ //不會印出來，並將其轉成指標陣列tempIrp存起來
+  if (isTempIr){ /*判斷isTempIr是否為1*/ \
+    sprintf(tempIrp, __VA_ARGS__); /*不會印出來，並將其轉成指標陣列tempIrp存起來*/ \
     tempIrp += strlen(tempIrp);\
   }\
   else { \
-    printf(__VA_ARGS__);\ //若為0，則將其印出
+    printf(__VA_ARGS__); /*若為0，則將其印出*/ \
   }\
 })
 </code></pre>

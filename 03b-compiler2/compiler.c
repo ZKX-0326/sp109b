@@ -14,12 +14,12 @@ int tempIdx = 0, labelIdx = 0;
 int isTempIr = 0;
 char tempIr[100000], *tempIrp = tempIr;
 #define emit(...) ({ \
-  if (isTempIr){ \
-    sprintf(tempIrp, __VA_ARGS__); \
+  if (isTempIr){ /*判斷isTempIr是否為1*/ \
+    sprintf(tempIrp, __VA_ARGS__); /*不會印出來，並將其轉成指標陣列tempIrp存起來*/ \
     tempIrp += strlen(tempIrp);\
   }\
   else { \
-    printf(__VA_ARGS__);\
+    printf(__VA_ARGS__); /*若為0，則將其印出*/ \
   }\
 })
 
@@ -145,13 +145,13 @@ void FOR(){
   emit("if not T%d goto L%d\n", e, forEnd);
   skip(";");
   isTempIr = 1;
-  int e1 = E();
+  int e1 = E(); //先將i++的部分暫存
   isTempIr = 0;
   char e1str[10000];
-  strcpy(e1str, tempIr);
+  strcpy(e1str, tempIr); //複製tempIr給e1str
   skip(")");
   STMT();
-  emit("%s\n", e1str);
+  emit("%s\n", e1str); //印出e1str(i++)
   emit("goto L%d\n", forBegin);
   emit("(L%d)", forEnd);
 }
