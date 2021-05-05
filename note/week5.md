@@ -57,5 +57,4 @@ void FOR(){
   emit("goto L%d\n", forBegin);
   emit("(L%d)", forEnd);
 }
-
 ```

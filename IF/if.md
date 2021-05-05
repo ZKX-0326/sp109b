@@ -1,7 +1,6 @@
 # IF
 > 參考03b-compiler2.c中的while的寫法
-<pre><code>
-void IF(){
+<pre><code>void IF(){
   int ifBegin = nextLabel();
   int ifMid = nextLabel();
   int ifEnd = nextLabel();
@@ -23,8 +22,7 @@ void IF(){
 </code></pre>
 
 * if.c
-<pre><code>
-if (a>3) {
+<pre><code>if (a>3) {
   t=1;
 } else if(a<=0){
   t=2;
