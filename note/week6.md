@@ -33,6 +33,6 @@ int main(){
     printf("p=%d\n", p);
 }
 ```
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D.png)
 > 框架暫存器(EBP):現在的存取點
 > 堆疊暫存器(ESP):目前堆疊的最後一個
