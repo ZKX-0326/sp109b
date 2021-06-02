@@ -12,15 +12,15 @@
 讓程式師及使用者能輕鬆操作的環境
 
 ## 行程vs執行緒
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-28-638.jpg)
 
 ## task
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D1.png)
 ## vmem
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D2.png)
 ## mem
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D3.png)
 ## mem0
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D4.png)
 ## georgeMary
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D5.png)
