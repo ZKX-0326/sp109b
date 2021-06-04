@@ -14,13 +14,13 @@
 ## 行程vs執行緒
 ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-28-638.jpg)
 
-## task
-![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D1.png)
-## vmem
-![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D2.png)
-## mem
-![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D3.png)
-## mem0
-![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D4.png)
-## georgeMary
-![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D5.png)
+* task
+> ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D1.png)
+* vmem
+> ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D2.png)
+* mem
+> ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D3.png)
+* mem0
+> ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D4.png)
+* georgeMary
+> ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E6%9C%AA%E5%91%BD%E5%90%8D5.png)
