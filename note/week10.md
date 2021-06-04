@@ -25,10 +25,10 @@
 
 # 常見的MMU硬體
 * 重定位暫存器
-![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-40-638.jpg)
+> ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-40-638.jpg)
 * 基底界限暫存器
-![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-41-638.jpg)
+> ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-41-638.jpg)
 * 分段表
-![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-42-638.jpg)
+> ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-42-638.jpg)
 * 分頁表
-![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-43-638.jpg)
+> ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-43-638.jpg)
