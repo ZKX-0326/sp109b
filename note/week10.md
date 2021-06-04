@@ -21,7 +21,7 @@
 分配:malloc()
 回收:free()
 * 記憶體分配策略
-![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-35-638.jpg)
+> ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-35-638.jpg)
 
 # 常見的MMU硬體
 * 重定位暫存器
