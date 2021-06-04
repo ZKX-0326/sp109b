@@ -5,7 +5,7 @@
 ## 競爭情況(race condition)
 * race
 > ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202021-06-03%20215608.png)
-在多thread或多CPU的情況下，兩邊能共用某些變數，但可能造成修改某變數時，會讓該變數的值出現錯誤
+> 在多thread或多CPU的情況下，兩邊能共用某些變數，但可能造成修改某變數時，會讓該變數的值出現錯誤
 * norace
 > ![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202021-06-03%20215753.png)
 > 在修改共用變數前上鎖，修改後解鎖
