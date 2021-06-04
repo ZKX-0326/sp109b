@@ -1,6 +1,6 @@
 # 系統程式第十週筆記\
 ## 單行程系統&多工系統
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-14-638.jpg)
 
 ## 競爭情況(race condition)
 * race
@@ -14,21 +14,21 @@
 > 當兩個程式在互相等待對方的資源，但都把該資源鎖上時，會發生死結(當機)
 
 # 排程方法
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-23-638.jpg)
 
 # 記憶體管理
 * C語言中的記憶體分配與回收
 分配:malloc()
 回收:free()
 * 記憶體分配策略
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-35-638.jpg)
 
 # 常見的MMU硬體
 * 重定位暫存器
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-40-638.jpg)
 * 基底界限暫存器
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-41-638.jpg)
 * 分段表
-![picture]()
-* 分業表
-![picture]()
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-42-638.jpg)
+* 分頁表
+![picture](https://github.com/ZKX-0326/sp109b/blob/main/note/picture/10-43-638.jpg)
