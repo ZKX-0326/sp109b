@@ -11,7 +11,7 @@
 * C4同時也能做到自我編譯
 
 ## Code
-* [程式碼]()
+* [程式碼](https://github.com/ZKX-0326/sp109b/blob/main/final/C4/c4.c)
 
 ## 執行成果
 * 編譯hello.c
