@@ -15,10 +15,10 @@
 
 ## 執行成果
 * 編譯hello.c
-> ![hello](https://github.com/ZKX-0326/sp109b/blob/main/final/C4/picture/hello.png)
+![hello](https://github.com/ZKX-0326/sp109b/blob/main/final/C4/picture/hello.png)
 > 『hello, world』為hello.c輸出，『exit(0) cycle = 9』則是由C4輸出，表示正常運作並結束以及hello.c共生成9條代碼
 * 以C4自我編譯後的C4編譯hello.c
-> ![C4hello](https://github.com/ZKX-0326/sp109b/blob/main/final/C4/picture/C4hello.png)
+![C4hello](https://github.com/ZKX-0326/sp109b/blob/main/final/C4/picture/C4hello.png)
 > 『exit(0) cycle = 9』由被C4編譯的C4輸出，表示正常運作並結束以及hello.c共生成9條代碼
 > 『exit(0) cycle = 25983』則是一開始由GCC編譯的C4輸出，表示正常運作並結束以及c4.c共生成25983條代碼
 
