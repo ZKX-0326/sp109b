@@ -1,7 +1,7 @@
 # 期末報告: C4編譯器
 
 ## 此專案來源
-* 此專案為參考 [Robert Swierczek](https://github.com/rswier/c4) 的程式碼，並在我理解後加上註解，但是因為我還沒辦法完全理解，故只有部分註解，其餘部分我會在理解後補上
+* 此專案為參考 [Robert Swierczek](https://github.com/rswier/c4) 在github的程式碼，並在我理解後加上註解，但是因為我還沒辦法完全理解，故只有部分註解，其餘部分我會在理解後補上
 
 * [版權說明](https://github.com/rswier/c4/blob/master/LICENSE)
 

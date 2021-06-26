@@ -5,7 +5,7 @@
 // just enough features to allow self-compilation and a bit more
 
 // Written by Robert Swierczek
-// 修改者 陳彥翔(加上中文註解)
+// 修改者 陳彥翔(僅加上中文註解)
 
 #include <stdio.h>
 #include <stdlib.h>
